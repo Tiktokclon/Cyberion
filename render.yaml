@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: api-illimitee
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: API_KEY
+        value: "msOkIKsYs5ChIdDO8UW9Fi_oBTA5vuvxyXMNGF1SNiA"
+        fromDatabase: false
